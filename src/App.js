@@ -19,6 +19,7 @@ import Booking from './Pages/Booking/Booking';
 import MyOrder from './Pages/MyOrder/MyOrder';
 import ManageAll from './Pages/ManageAll/ManageAll';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import AddPackages from './Pages/AddPackages/AddPackages';
 function App() {
   return (
     <div className="App">
@@ -52,6 +53,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path='/manageorderall'>
               <ManageAll></ManageAll>
+            </PrivateRoute>
+            <PrivateRoute path='/addpackages'>
+              <AddPackages></AddPackages>
             </PrivateRoute>
             <Route path='/login'>
               <Login></Login>

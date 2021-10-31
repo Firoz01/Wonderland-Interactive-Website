@@ -30,6 +30,7 @@ const Header = () => {
                   <>
                      <Nav.Link className='nav-style' as={Link} to="/myorder">my order</Nav.Link>
                      <Nav.Link className='nav-style' as={Link} to="/manageorderall">manage all</Nav.Link>
+                     <Nav.Link className='nav-style' as={Link} to="/addpackages">add packages</Nav.Link>
                     <span className="fw-bold d-flex justify-content-center align-items-center user-name text-info">{user.displayName}</span>
 
                     <div className="d-flex justify-content-center align-items-center">

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 import All from '../All/All';
 
@@ -6,13 +7,16 @@ const MyOrder = () => {
 
     const { user } = useAuth();
     const [myBookings, setMyBookings] = useState([]);
+    const [loading, setLoading] = useState(true);
     
     useEffect(() => {
         fetch('https://warm-woodland-84420.herokuapp.com/booked')
             .then(res => res.json())
             .then(data => setMyBookings(data));
+            setLoading(false);
     },[])
 
+  
 
     const filter = {
         email: user.email
@@ -46,11 +50,15 @@ const MyOrder = () => {
 
     }
 
+    if (true) {
+        <Spinner className="spinner" animation="border" variant="danger" />
+    }
+
     return (
         <div>
             <h2 className='text-success my-3'>My Booking Package:
                 {bookings.length}</h2>
-            <div className='booking-list my-4 mx-3'>
+            <div className='booking-list my-4 mx-3'>  
                 {
                     bookings.map(booking => <All key={booking._id}
                         all={booking}

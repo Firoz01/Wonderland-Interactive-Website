@@ -30,7 +30,7 @@ const Contact = () => {
 
                     {user.email && <input defaultValue={user.email} {...register("email", { required: true })} />}
                     {errors.email && <span className="error">This field is required</span>}
-                    <textarea placeholder="Type Your Messages" defaultValue="" {...register("massages")} />
+                    <textarea placeholder="Type Your Massages" defaultValue="" {...register("massages")} />
 
                     <input className='massage-button' type="submit" />
                 </form>
