@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container, Nav, Navbar, Button } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
 import './Header.css'
 
@@ -15,7 +14,7 @@ const Header = () => {
                     <Navbar.Brand className='title-heading' href="/home">WONDERLAND</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link className='nav-style' as={HashLink} to="/home#home">Home</Nav.Link>
+                        <Nav.Link className='nav-style' as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link className='nav-style' as={Link} to="/about">About</Nav.Link>
                         <Nav.Link className='nav-style' as={Link}  to="/packages">Packages</Nav.Link>
                         <Nav.Link className='nav-style' as={Link} to="/contact">Contact</Nav.Link>

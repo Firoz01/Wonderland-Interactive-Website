@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
  
 import Header from './Pages/Shared/Header/Header';
 import Login from './Pages/Login/Login/Login';
+import NotFound from './Pages/NotFound/NotFound'
 import AuthProvider from './context/AuthProvider';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -17,6 +18,7 @@ import MemberShip from './Pages/MemberShip/MemberShip';
 import Booking from './Pages/Booking/Booking';
 import MyOrder from './Pages/MyOrder/MyOrder';
 import ManageAll from './Pages/ManageAll/ManageAll';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 function App() {
   return (
     <div className="App">
@@ -36,9 +38,9 @@ function App() {
             <Route path='/packages/booking/:id'>
                 <Booking></Booking>
             </Route>
-            <Route path='/packages'>
+            <PrivateRoute path='/packages'>
               <Packages></Packages>
-            </Route>        
+            </PrivateRoute>        
             <Route path='/contact'>
               <Contact></Contact>
             </Route>
@@ -53,6 +55,9 @@ function App() {
             </Route>
             <Route path='/login'>
               <Login></Login>
+            </Route>
+            <Route path='*'>
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>
