@@ -20,8 +20,9 @@ const Login = () => {
 
     return (
         <div>
-            <h2>Please Log in</h2>
-            <button onClick={handleGoogleLogin} className="btn btn-warning" >Google sign In</button>
+            <h2 className='text-primary my-5'>Please Log in</h2>
+            <p>Right Now Sign In option only avaiable on Google Sign In</p>
+            <button onClick={handleGoogleLogin} className="btn btn-warning my-5" >Google sign In</button>
         </div>
     );
 };

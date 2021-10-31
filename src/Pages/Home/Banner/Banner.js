@@ -4,8 +4,6 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div className='banner-section'>
-        
-               
         </div>
     );
 };

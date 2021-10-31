@@ -24,7 +24,7 @@ export default class AutoPlayMethods extends Component {
       autoplaySpeed: 2000
     };
     return (
-      <div className='container'>
+      <div className='container mb-5'>
         <h2 className='title-text'>things to do</h2>
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div className='slider-img'>
