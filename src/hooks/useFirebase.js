@@ -16,11 +16,12 @@ const useFirebase = () => {
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
-    
+
     const signInUsingGoogle = () => {
 
        return signInWithPopup(auth, googleProvider);
     }
+    
 
     //observer
 
