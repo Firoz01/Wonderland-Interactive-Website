@@ -1,0 +1,19 @@
+.packages-banner{
+    background-image: url(https://image.freepik.com/free-vector/amusement-park-scene-daytime-with-balloons-sky_1308-55167.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.packages-title h1{
+    color: rgba(3, 0, 0, 0.815);
+    font-size: 100px;
+    padding-top: 180px;
+    
+}
+
+.packages-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+}

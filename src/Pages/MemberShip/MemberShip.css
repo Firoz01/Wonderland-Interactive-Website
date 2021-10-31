@@ -1,0 +1,27 @@
+.banner{
+    background-color: yellow;
+    width: 100%;
+    background-size: 100% 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+}
+.banner h1{
+    padding-top: 20px;
+    font-size: 80px;
+    color: white;
+}
+.details-background{
+    background-color: rgb(75, 72, 72);
+}
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    padding-left: 50px;
+}
+.get-now{
+    height: 80px;
+}
+.get-now h2{
+    font-size: 60px;
+}
